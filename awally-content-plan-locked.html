@@ -1,0 +1,2714 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   Awally — Content Plan
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Readex+Pro:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+   :root{--bg:#E9DDC8;--card:#F6F2EA;--ink:#2A211A;--mu:#675B4B;--line:#D2C3A8;--ac:#7F5C30;--ac2:#B8935A;--tint:#DCCFB8;--sh:0 6px 18px rgba(90,65,30,.12);
+--Pb:#F8DDD5;--Pt:#8A3F2D;--Ib:#DDE8F2;--It:#2E5575;--Xb:#DEEDDA;--Xt:#3C6B3A;--Tb:#F8E8B8;--Tt:#7A5A10;--Lb:#E9DEF3;--Lt:#5B3E7A;
+--serif:"Instrument Serif","Readex Pro",Georgia,serif;--sans:"Readex Pro",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#15110C;--card:#1F1912;--ink:#F5EEE2;--mu:#B5A794;--line:#34291C;--ac:#D3AE7C;--ac2:#B08A55;--tint:#2B2318;--sh:none;
+--Pb:#4A2A22;--Pt:#F5BFAE;--Ib:#223647;--It:#A9CBE8;--Xb:#25392A;--Xt:#B5DDB0;--Tb:#463A15;--Tt:#F2D888;--Lb:#38294A;--Lt:#D9C2F0}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.75 var(--sans);-webkit-text-size-adjust:100%}
+.wrap{max-width:860px;margin:auto;padding:0 16px}
+.hero{padding:calc(env(safe-area-inset-top,0px) + 34px) 0 22px;background:transparent;}
+.hero .wrap{text-align:center}
+.av{width:104px;height:104px;border-radius:50%;padding:4px;background:conic-gradient(var(--ac),var(--ac2),#E6CFA8,var(--ac));margin:0 auto 12px}
+.av img{width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--bg);display:block}
+.brand{font:400 clamp(46px,13vw,76px)/1 var(--serif);letter-spacing:.04em;margin:0}
+.tag-l{color:var(--mu);margin:6px 0 16px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip2{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:13.5px;box-shadow:var(--sh)}
+.today{margin:20px 0 0;background:var(--ac);color:#fff;border-radius:22px;padding:16px 18px;text-align:start;box-shadow:var(--sh)}
+.today small{opacity:.85;letter-spacing:1px;text-transform:uppercase;font-size:11.5px}
+.today b{display:block;font:400 26px/1.15 var(--serif);margin:3px 0 6px}
+.today p{margin:0 0 10px;font-size:14.5px;opacity:.95;line-height:1.6}
+.today a{display:inline-block;background:#fff;color:#6B4A25;text-decoration:none;font-weight:600;font-size:14px;border-radius:99px;padding:7px 16px}
+.prog{margin-top:14px;text-align:start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 16px}
+.prog div.bar2{height:9px;border-radius:9px;background:var(--tint);margin-top:8px;overflow:hidden}.bar2 i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));transition:width .3s}
+.steps{display:grid;gap:10px;margin:18px 0 0;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));text-align:start}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 14px;display:flex;gap:12px;align-items:flex-start}
+.step em{font:400 28px/1 var(--serif);color:var(--ac);font-style:normal}.step span{font-size:14.5px;line-height:1.55;unicode-bidi:plaintext;text-align:start}
+.legend{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:16px;font-size:12.5px}
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav.top .wrap{display:flex;gap:6px;overflow-x:auto;padding:9px 16px;scrollbar-width:none}
+nav.top a{white-space:nowrap;text-decoration:none;font-size:14px;padding:6px 14px;border-radius:99px;color:var(--mu);background:var(--card);border:1px solid var(--line);font-weight:500}
+nav.top a:active,nav.top a:hover{background:var(--ac);color:#fff;border-color:var(--ac)}
+section{padding:34px 0 6px}
+h2{display:flex;align-items:center;gap:10px;font:400 clamp(28px,7vw,40px)/1.1 var(--serif);margin:0 0 6px}
+h2 .si{flex:none;width:44px;height:44px;border-radius:14px;background:var(--tint);display:grid;place-items:center;font-size:22px}
+h3{font-size:17px;font-weight:600;margin:0 0 6px}.sub-h{margin:26px 0 8px;font:400 22px/1.2 var(--serif);color:var(--ac);padding-top:14px;border-top:2px dashed var(--line)}
+.lead,.note,.tip,.hook,.shots li>div,.info dd,.card li,.card p,.body p{unicode-bidi:plaintext;text-align:start}
+.lead{color:var(--mu);margin:0 0 18px;font-size:15.5px}
+.note{background:var(--tint);border-radius:16px;padding:13px 16px;margin:16px 0;font-size:15px;border-inline-start:4px solid var(--ac)}
+.grid,.two,.pair{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 18px;box-shadow:var(--sh)}
+.star{border-color:var(--ac);border-width:1.5px}
+ul{margin:0;padding-inline-start:20px}li{margin:4px 0}li::marker{color:var(--ac)}
+details{background:var(--card);border:1px solid var(--line);border-radius:20px;margin:0 0 10px;overflow:hidden;box-shadow:var(--sh)}
+details[open]{border-color:var(--ac)}
+summary{cursor:pointer;list-style:none;padding:13px 14px;display:flex;gap:11px;align-items:center;-webkit-tap-highlight-color:transparent}
+summary::-webkit-details-marker{display:none}
+summary .ic{flex:none;width:44px;height:44px;border-radius:14px;background:var(--tint);display:grid;place-items:center;font-size:23px}
+summary b{flex:1;font:400 20px/1.2 var(--serif);unicode-bidi:plaintext;text-align:start}
+summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;background:var(--tint);color:var(--ac);display:grid;place-items:center;font-size:20px;font-weight:600}
+details[open] summary::after{content:"–";background:var(--ac);color:#fff}
+details.dn summary b::after{content:" ✓";color:#3C8A4A}details.dn{opacity:.8}
+.chip{flex:none;font-size:11.5px;font-weight:600;border-radius:99px;padding:2px 10px}
+.body{border-top:1px solid var(--line)}
+.tagrow,.tags{display:flex;flex-wrap:wrap;gap:6px;padding:12px 16px 0}
+.tag{display:inline-block;font-size:12px;font-weight:600;border-radius:99px;padding:2px 11px;background:var(--tint);color:var(--ac)}
+.t-Product{background:var(--Pb);color:var(--Pt)}.t-Informative{background:var(--Ib);color:var(--It)}.t-Interactive{background:var(--Xb);color:var(--Xt)}.t-Trend{background:var(--Tb);color:var(--Tt)}.t-Lifestyle{background:var(--Lb);color:var(--Lt)}
+.hook{margin:12px 16px;padding:14px 16px;border-radius:16px;background:linear-gradient(135deg,var(--tint),var(--card));border:1px solid var(--line);font-size:18px;line-height:1.5}
+.hook small{display:block;color:var(--ac);font-size:11.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:3px;unicode-bidi:normal;text-align:start}
+.hook i{display:block;color:var(--mu);font-size:14px;margin-top:4px}
+.ph{padding:14px 18px 2px;font-weight:600;color:var(--ac);font-size:13.5px;letter-spacing:.6px}
+.shots{list-style:none;margin:0;padding:6px 16px 6px;counter-reset:s}
+.shots li{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);margin:0}
+.shots li:last-child{border:0}
+.shots .t{align-self:start;text-align:center;background:var(--ac);color:#fff;border-radius:12px;font-size:12.5px;font-weight:600;padding:4px 4px;line-height:1.35;unicode-bidi:normal}
+.shots li>div{font-size:15.5px;line-height:1.7}
+.ot{display:block;margin-top:5px;padding:6px 10px;border-radius:10px;background:var(--tint);color:var(--ac);font-size:13.5px;line-height:1.5;font-weight:500;unicode-bidi:plaintext;text-align:start}
+.info{margin:0;padding:6px 16px 12px;display:grid;gap:8px}
+.info div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px 14px}
+.info dt{font-size:12.5px;font-weight:600;color:var(--ac);margin-bottom:2px}.info dd{margin:0;font-size:15px;line-height:1.65}
+.tip{margin:0 16px 14px;padding:10px 14px;border-radius:14px;background:var(--tint);font-size:14.5px}
+.m{color:var(--mu);font-size:14px}
+mark{background:#FBE9A6;color:#2F2114;border-radius:5px;padding:0 3px}
+.done{display:block;margin:0 16px 16px;width:calc(100% - 32px);border:1.5px solid var(--ac);background:transparent;color:var(--ac);font:600 14.5px var(--sans);padding:10px;border-radius:14px}
+.done.on{background:#3C8A4A;border-color:#3C8A4A;color:#fff}
+.bar{display:flex;gap:8px;margin:14px 0 4px}.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:99px;font:500 13.5px var(--sans)}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:34px 0 60px}
+#up{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:0;background:var(--ac);color:#fff;font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,.2);z-index:30}
+@media(max-width:420px){.shots li{grid-template-columns:64px 1fr;gap:10px}summary b{font-size:18.5px}}
+.glance{margin:16px 0 0;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 16px;text-align:start;box-shadow:var(--sh)}
+.glance h3{margin:0 0 6px}.gr{display:grid;grid-template-columns:44px 1fr;gap:2px 10px;padding:7px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+.gr b{color:var(--ac);font-weight:600}.gr em{grid-column:2;font-style:normal;color:var(--mu);font-size:13.5px}.glance .m{margin:8px 0 0}
+#up{text-decoration:none;display:grid;place-items:center}
+.pw{display:flex;gap:8px}.pw input{flex:1;min-width:0;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:14px;padding:12px 14px;font:inherit}.pw button{border:0;background:var(--ac);color:#fff;border-radius:14px;padding:0 20px;font:600 15px var(--sans)}.msg{margin:8px 0 0;min-height:1.2em}
+  </style>
+ </head>
+ <body>
+  <header class="hero" id="top">
+   <div class="wrap">
+    <div class="av">
+     <img alt="Awally" src="data:image/jpeg;base64,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"/>
+    </div>
+    <h1 class="brand">
+     Awally
+    </h1>
+    <p class="tag-l">
+     Curated styles, timeless elegance ✨ · Old Souks, Tyre
+    </p>
+    <div class="chips">
+     <span class="chip2">
+      🗓️ 9+ Stories/day
+     </span>
+     <span class="chip2">
+      🎬 6 Reels/week
+     </span>
+     <span class="chip2">
+      📚 3 Carousels/week
+     </span>
+     <span class="chip2">
+      🖼️ 3–5 Posts/week
+     </span>
+    </div>
+    <div class="steps">
+     <div class="step">
+      <em>
+       1
+      </em>
+      <span>
+       كبّسي على اليوم أو الـReel أو الـCarousel لتفتحيه.
+      </span>
+     </div>
+     <div class="step">
+      <em>
+       2
+      </em>
+      <span>
+       صوّري حسب اللقطات ثانية بثانية، وانسخي الكابشن.
+      </span>
+     </div>
+     <div class="step">
+      <em>
+       3
+      </em>
+      <span>
+       عبّي الخانات
+       <mark>
+        [الصفراء]
+       </mark>
+       وانشري بالوقت المقترح.
+      </span>
+     </div>
+    </div>
+    <div class="legend">
+     <span class="tag t-Product">
+      Product
+     </span>
+     <span class="tag t-Informative">
+      Informative
+     </span>
+     <span class="tag t-Interactive">
+      Interactive
+     </span>
+     <span class="tag t-Trend">
+      Trend
+     </span>
+     <span class="tag t-Lifestyle">
+      Lifestyle
+     </span>
+    </div>
+   </div>
+  </header>
+  <nav class="top">
+   <div class="wrap">
+    <a href="#stories">
+     🗓️ Stories
+    </a>
+    <a href="#modes">
+     🎭 Story Modes
+    </a>
+    <a href="#sale">
+     🔥 Sale Flow
+    </a>
+    <a href="#collection">
+     ✨ New Collection
+    </a>
+    <a href="#bank">
+     💡 Story Bank
+    </a>
+    <a href="#w1">
+     🎬 Week 1
+    </a>
+    <a href="#w2">
+     🔒 Week 2
+    </a>
+    <a href="#w3">
+     🔒 Week 3
+    </a>
+    <a href="#w4">
+     🔒 Week 4
+    </a>
+    <a href="#creative">
+     🎨 Creative
+    </a>
+    <a href="#calendar">
+     ⏰ Posting
+    </a>
+   </div>
+  </nav>
+  <main class="wrap">
+   <section id="stories">
+    <h2>
+     <span class="si">
+      🗓️
+     </span>
+     <span>
+      Daily Stories (9 per day)
+     </span>
+    </h2>
+    <p class="lead">
+     كل يوم 9 Stories مقسومة على 3 مراحل: الصبح، الظهر، المسا. الصبح دايماً Good morning + Store Tour. كل يوم إله تركيز مختلف. كبّسي على اليوم لتشوفي السكريبت.
+    </p>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Monday · New In & Collection
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Monday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ New In & Collection · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+         لقطة قريبة للرف أو القطعة الجديدة وقولي “اليوم عنا جديد”.
+         <span class="ot">
+          ✍️ On screen: Today: NEW IN 🆕
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         القطعة الجديدة عالـhanger، لفّة بطيئة ثم قريبة للقماش.
+         <span class="ot">
+          ✍️ On screen: NEW IN ✨ Just landed · Now
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+          نظرة سريعة للكولكشن كاملة وبعدها قطعة قطعة .
+         <span class="ot">
+          ✍️ On screen: The Collection 👗 Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         القطعة بكل ألوانها جنب بعض + المقاسات.
+         <span class="ot">
+          ✍️ On screen: Colours: pink · blue · beige | Sizes: S–XL
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         صورتين جنب بعض (قطعتين) + Poll.
+         <span class="ot">
+          ✍️ On screen: Which one? 1 or 2 🤍 [Poll]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         لابسة القطعة: قدام/ورا/جنب، وبنهاية لفّة.
+         <span class="ot">
+          ✍️ On screen: Style it like this · Size M · 75cm
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+        Reshare ل Reel الجديد.
+         <span class="ot">
+          ✍️ On screen: New Reel 🎬 · DM to order · 81 547 140
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Tuesday · Styling
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Tuesday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span></span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Styling · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+        لقطة لطلّة اليوم كاملة بكل التفاصيل .
+         <span class="ot">
+          ✍️ On screen: Today: Styling day 🤍
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         OOTD: لقطة مراية بسيطة.
+         <span class="ot">
+          ✍️ On screen: OOTD 🤍 · Piece:
+          <mark>
+           __
+          </mark>
+          ·
+          <mark>
+           __
+          </mark>
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         نفس القطعة بلوكين: كاجوال وأنيق .
+         <span class="ot">
+          ✍️ On screen: Dress up or down? 👀 [Poll]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         اكسسوار واحد بيغيّر الطلّة (شنطة/شال).
+         <span class="ot">
+          ✍️ On screen: Add this = a new outfit
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         Quiz: أي لون بيركب مع البيج؟ 3 خيارات.
+         <span class="ot">
+          ✍️ On screen: Which colour goes with beige? [Quiz]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         Try-on، سريع للوك تتطلع من غرفة القياس كل مرة بلوك جديد
+         <span class="ot">
+          ✍️ On screen: Size M 
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         Reshare للـCarousel الجديد.
+         <span class="ot">
+          ✍️ On screen: New Carousel 📚 · Save it!
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Wednesday · Behind the Scenes & Trust
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Wednesday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Behind the Scenes & Trust · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+         إيد عم تكوي/إيد عم تفتح وتجهز القطع الجديدة.
+         <span class="ot">
+          ✍️ On screen: Behind the scenes 🎬
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         كوي وترتيب القطع الجديدة وتعليقها على الستاند وتجهيزها للعرض (time-lapse).
+         <span class="ot">
+          ✍️ On screen: Getting the store ready ✨
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         تغليف طلبية بدون أسماء أو عناوين.
+         <span class="ot">
+          ✍️ On screen: Packing love 📦🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         فتح كرتونة جديدة من المورّد.
+         <span class="ot">
+          ✍️ On screen: New box = new pieces 👀
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         Screenshot Feedback بدون اسم أو رقم.
+         <span class="ot">
+          ✍️ On screen: Happy customers 🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         Countdown sticker للقطع الجديدة.
+         <span class="ot">
+          ✍️ On screen: Stay tuned ⏳ [Countdown]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         3 خطوات للطلب بنص بسيط.
+         <span class="ot">
+          ✍️ On screen: How to order: 1 DM · 2 Choose size · 3 Delivery 🚚
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Thursday · Interaction & Q&A
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Thursday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Interaction & Q&A · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+         Question box  الصبح.
+         <span class="ot">
+          ✍️ On screen: Ask me anything 💬 [Question box]
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         Question box: بدكن تعرفو شو في منا الوان لهيدي القطعة؟ صوتوا:اي او لا.
+         <span class="ot">
+          ✍️ On screen: Yes or No [Poll]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         جاوبي 3 أسئلة (فيديو أو نص).
+         <span class="ot">
+          ✍️ On screen: You asked, we answer 💬
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         This or That: Set or Dress?
+         <span class="ot">
+          ✍️ On screen: This or That? [Poll]
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         خمّني السعر: قطعة + سلايدر.
+         <span class="ot">
+          ✍️ On screen: Guess the price 💰 [Slider]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         Rate my fit: لابسة الطلّة + slider.
+         <span class="ot">
+          ✍️ On screen: Rate my fit /10 [Slider]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         Poll:الجاي؟Reel أي موضوع بدكن بالـ 
+         <span class="ot">
+          ✍️ On screen: Next Reel? [Poll]
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Friday · Weekend Picks
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Friday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Weekend Picks · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+         لقطة 3 قطع معلّقين جنب بعض.
+         <span class="ot">
+          ✍️ On screen: Weekend picks 💫
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         أحلى 3 قطع للويكند، كل وحدة 3 ث.
+         <span class="ot">
+          ✍️ On screen: Top 3 for the weekend
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         Try-on سريع للقطعة الأكثر طلباً.
+         <span class="ot">
+          ✍️ On screen: Size M ·
+          <mark>
+           __
+          </mark>
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         Last sizes: صوّري القطع القليلة.
+         <span class="ot">
+          ✍️ On screen: Last sizes ⏳ DM now
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         Poll: أي لون بتحبو نصورلكن اليوم؟
+         <span class="ot">
+          ✍️ On screen: Brown or Black? [Poll]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         طلّة ويكند كاملة مع إكسسوار.
+         <span class="ot">
+          ✍️ On screen: Weekend look ✨
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         ساعات الدوام + الموقع + رقم الطلب.
+         <span class="ot">
+          ✍️ On screen: 📍 Old Souks, Tyre · 81 547 140
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Saturday · Sale Day 🔥
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Saturday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث):
+         <span> New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Sale Day 🔥 · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+          وقولي  Sale rack صوري ال 
+          "Sale اليوم"
+
+         <span class="ot">
+          ✍️ On screen: SALE 🔥 Today only
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         الرف كامل: “هالقطع كلها Sale” +لقطة سريعة .
+         <span class="ot">
+          ✍️ On screen: SALE rack 🔥 Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         كل قطعة لحالها: لفّة + ألوان + مقاسات + سعر قديم مشطوب وجديد.
+         <span class="ot">
+          ✍️ On screen: Was
+          <mark>
+           __
+          </mark>
+          → NOW
+          <mark>
+           __
+          </mark>
+          · Sizes:
+          <mark>
+           __
+          </mark>
+          · Colours:
+          <mark>
+           __
+          </mark>
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+         عدد القطع المتبقية بمقاس معين.
+         <span class="ot">
+          ✍️ On screen: Only
+          <mark>
+           __
+          </mark>
+          left in size M 🏃‍♀️
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         Countdown: كم ساعة متبقية للعرض.
+         <span class="ot">
+          ✍️ On screen: Sale ends soon ⏳ [Countdown]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         قطعة انباعت: “Sold out” مع ستيكر.
+         <span class="ot">
+          ✍️ On screen: SOLD OUT, Thank you!
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         How to order: DM + رقم.
+         <span class="ot">
+          ✍️ On screen: DM to order · Delivery across Lebanon 🚚
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Sunday · Weekly Recap
+      </b>
+     </summary>
+     <div class="body">
+      <div class="ph">
+       ☀️ MORNING · الصبح (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         M1
+        </span>
+        <div>
+         افتحي باب المحل بالكاميرا (ثابتة من برّا) وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour سريع بالمحل (5–8 ث).
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Sunday · 📍 Old Souks, Tyre
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M2
+        </span>
+        <div>
+         Store Tour يومي: امشي ببطء وصوّري الرفوف رف رف (10–15 ث): 
+         <span>New In ← Collection ← Sale، وخلّصي بلقطة المراية.</span>
+         <span class="ot">
+          ✍️ On screen: Today in store ✨ Weekly Recap · Swipe 👉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         M3
+        </span>
+        <div>
+         لقطة هادية للمحل مع قهوة .
+         <span class="ot">
+          ✍️ On screen: Slow Sunday ☕
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌤️ AFTERNOON · الظهر (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         A1
+        </span>
+        <div>
+         أكتر 3 قطع انباعت هالأسبوع.
+         <span class="ot">
+          ✍️ On screen: Best sellers of the week 🏆
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A2
+        </span>
+        <div>
+         Feedbacks مجمّعة بدون أسماء.
+         <span class="ot">
+          ✍️ On screen: Words we love 🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         A3
+        </span>
+        <div>
+        بتحبو تشوفو الوان تانية من هيدي القطعة.
+         <span class="ot">
+          ✍️ On screen: Yes or No? [Poll]
+         </span>
+        </div>
+       </li>
+      </ol>
+      <div class="ph">
+       🌙 EVENING · المسا (3)
+      </div>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         E1
+        </span>
+        <div>
+         Teaser (Blur Effect) كونو جاهزين للأسبوع الجاي .
+         <span class="ot">
+          ✍️ On screen: Next week… stay tuned 👀
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E2
+        </span>
+        <div>
+         كلمة شكر بصوت أو نص.
+         <span class="ot">
+          ✍️ On screen: Thank you for being part of Awally 🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         E3
+        </span>
+        <div>
+         Add Yours: “وريني طلّتك”.
+         <span class="ot">
+          ✍️ On screen: Add Yours: your fit of the week
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+   </section>
+   <section id="modes">
+    <h2>
+     <span class="si">
+      🎭
+     </span>
+     <span>
+      Story Modes (by what’s happening in store)
+     </span>
+    </h2>
+    <p class="lead">
+     كل يوم اختاري وضع واحد حسب وضع المحل. كل وضع فيه 6 ستوريز: أول وحدة دايماً فتح الباب + صباح الخير + tour، وبعدها 5 ستوريز حسب فترات اليوم. تحت كل ستوري النص اللي بينكتب عالشاشة.
+    </p>
+    <details>
+     <summary>
+      <span class="ic">
+       🔥
+      </span>
+      <b>
+       Mode A — Sale on a collection
+      </b>
+     </summary>
+     <div class="body">
+      <p class="lead" style="padding:12px 22px 0;margin:0">
+       الهدف: تصريف القطع..
+      </p>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         Opening ☀️
+        </span>
+        <div>
+         <b>
+          أول ستوري كل يوم:
+         </b>
+        (10–15 ث) بالمحل tour الكاميرا ثابتة برّا الباب، افتحي الباب وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي 
+     <span> .Sale rack من الرفوف لحد ال
+        </span> <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · SALE 🔥 starts now
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         12–2 PM
+        </span>
+        <div>
+         Announcement: SALE وCountdown sticker.فيديو للـستاند مع ستيكر  
+         <span class="ot">
+          ✍️ On screen: SALE 🔥
+          <mark>
+           [X]
+          </mark>
+          % off ·
+          <mark>
+           [Collection]
+          </mark>
+          · until
+          <mark>
+           [Date]
+          </mark>
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         2–4 PM
+        </span>
+        <div>
+         3 قطع، كل وحدة بستوري لحالها: لفّة + قماش + سعر قديم/جديد، وستيكر DM.
+         <span class="ot">
+          ✍️ On screen:
+          <mark>
+           [Piece name]
+          </mark>
+          · Was
+          <s>
+           $
+           <mark>
+            [X]
+           </mark>
+          </s>
+          → NOW $
+          <mark>
+           [X]
+          </mark>
+          · Sizes:
+          <mark>
+           [S–XL]
+          </mark>
+          · Colours:
+          <mark>
+           [..]
+          </mark>
+          · DM to order
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         4–6 PM
+        </span>
+        <div>
+        <span> Interactive:  " Sale ?اي قطعة بتحبو نضيفها ع ال"</span>
+         <span class="ot">
+          ✍️ On screen: Which piece should we add to the Sale? Tell us which one! [ Question]
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         6–8 PM
+        </span>
+        <div>
+         Social proof: Feedback على قطعة باقي منا كمية قليلة .
+         <span class="ot">
+          ✍️ On screen: Last 2 left ⏳ /  Thank you!
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         8–10 PM
+        </span>
+        <div>
+         Last call: Countdown وCTA مع الستاند انو باقي قطع قليلة.
+         <span class="ot">
+          ✍️ On screen: Last call! Ends
+          <mark>
+           [Day]
+          </mark>
+          ⏳ (Countdown sticker) · DM to reserve
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🧵
+      </span>
+      <b>
+       Mode B — No sale, setting up the new collection
+      </b>
+     </summary>
+     <div class="body">
+      <p class="lead" style="padding:12px 22px 0;margin:0">
+       الهدف: نبني فضول بدون ما نكشف شي.
+      </p>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         Opening ☀️
+        </span>
+        <div>
+         <b>
+          أول ستوري كل يوم:
+         </b>
+         الكاميرا ثابتة برّا الباب، افتحي الباب/الشاتر وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour بالمحل (10–15 ث) من الرفوف لحد الرف الفاضي أو الكراتين.
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Something’s cooking 👀
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         12–2 PM
+        </span>
+        <div>
+         BTS: كراتين وصلت أو الـستاند فاضي.
+         <span class="ot">
+          ✍️ On screen: Something’s cooking 👀 Stay tuned
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         2–4 PM
+        </span>
+        <div>
+         تحضير: كوي، تعليق، ترتيب (بدون ما يبين اللوك كامل).
+         <span class="ot">
+          ✍️ On screen: Getting ready ✨
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         4–6 PM
+        </span>
+        <div>
+         Question Box عن الكولكشن الجديد.
+         <span class="ot">
+          ✍️ On screen: What do you want to see in the new collection? 💬 (Question box)
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         6–8 PM
+        </span>
+        <div>
+         Poll:Top لونين للكولكشن الجاي جاكيت او.
+         <span class="ot">
+          ✍️ On screen: Colour A or B? 🤍 (Poll sticker)
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         8–10 PM
+        </span>
+        <div>
+        Ready for the new drop?
+         <span class="ot">
+          ✍️ On screen: Almost ready 🔥 (Slider) 
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       👀
+      </span>
+      <b>
+       Mode C — Teasing, warming people up
+      </b>
+     </summary>
+     <div class="body">
+      <p class="lead" style="padding:12px 22px 0;margin:0">
+       الهدف: ترقّب  من بيعرف. الكولكشن جاهز لكن ما انكشف.
+      </p>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         Opening ☀️
+        </span>
+        <div>
+         <b>
+          أول ستوري كل يوم:
+         </b>
+         الكاميرا ثابتة برّا الباب، افتحي الباب/الشاتر وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour بالمحل (10–15 ث) من الرفوف لحد الرف المغطّى.
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · Something new is coming…
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         12–2 PM
+        </span>
+        <div>
+         Quiz على close-up مغبّش: “خمّني شو هالقطعة؟”.
+         <span class="ot">
+          ✍️ On screen: Guess what this is 👀 (Quiz sticker)
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         2–4 PM
+        </span>
+        <div>
+         Countdown لتاريخ الإطلاق مع “Remind me”.
+         <span class="ot">
+          ✍️ On screen: Launching
+          <mark>
+           [Date]
+          </mark>
+          ⏳ (Countdown sticker) · Remind me
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         4–6 PM
+        </span>
+        <div>
+         Silhouette (Blur Effect) قطع بدون تفاصيل نخليها غامضة قبل وقت للعرض.
+         <span class="ot">
+          ✍️ On screen: 3 pieces you’ll love 🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         6–8 PM
+        </span>
+        <div>
+         Poll  صورتين مغبّشتين أو لونين بشو بدكن نبلش اول شي.
+         <span class="ot">
+          ✍️ On screen: Which first? A or B (Poll sticker)
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         8–10 PM
+        </span>
+        <div>
+         Reply to questions :CTA جواب على الاسئلة مع اضافة طريقة الطلب 
+         <span class="ot">
+          ✍️ On screen: DM, to get the details first 💌
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🎉
+      </span>
+      <b>
+       Mode D — Launch, the collection is ready
+      </b>
+     </summary>
+     <div class="body">
+      <p class="lead" style="padding:12px 22px 0;margin:0">
+      Highlight New In الهدف: الكشف الكامل وأول طلبات. كل القطع بالـ.
+      </p>
+      <ol class="shots">
+       <li>
+        <span class="t">
+         Opening ☀️
+        </span>
+        <div>
+         <b>
+          أول ستوري كل يوم:
+         </b>
+         الكاميرا ثابتة برّا الباب، افتحي الباب/الشاتر وقولي “صباح الخير 🤍”، بعدين ادخلي وعملي tour بالمحل (10–15 ث) من الرفوف لحد الكولكشن الجديدة.
+         <span class="ot">
+          ✍️ On screen: Good morning from Awally ☀️ · IT’S LAUNCH DAY 🎉
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         12–2 PM
+        </span>
+        <div>
+         New Collection is here -> Tap to watch the full Reel.
+        . لمشاهدتهReel كشف عن الكولكشن الجديد كامل+ اضافة 
+         <span class="ot">
+          ✍️ On screen: IT’S HERE 🎉 The new collection · New In ✨
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         2–4 PM
+        </span>
+        <div>
+       . DM ،كل قطعة بستوري: ألوان، مقاسات 
+         <span class="ot">
+          ✍️ On screen:
+          <mark>
+           [Piece]
+          · Colours:
+          <mark>
+           [..]
+          </mark>
+          · Sizes:
+          <mark>
+           [..]
+          </mark>
+          · DM to order
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         4–6 PM
+        </span>
+        <div>
+         Styling: Try-on سريع بلوكين مختلفين.
+         <span class="ot">
+          ✍️ On screen: 1 piece, 2 looks ✨ Which one? (Poll sticker)
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         6–8 PM
+        </span>
+        <div>
+        تغليف اول  طلب من الكولكشن الجديد.
+         <span class="ot">
+          ✍️ On screen: First order packed 📦 Thank you 🤍
+         </span>
+        </div>
+       </li>
+       <li>
+        <span class="t">
+         8–10 PM
+        </span>
+        <div>
+         Recap(ملخص سريع للكولكشن) + Poll + CTA
+         <span class="ot">
+          ✍️ On screen: Your favourite piece? (Poll sticker) · Delivery all over Lebanon 🚚
+         </span>
+        </div>
+       </li>
+      </ol>
+     </div>
+    </details>
+    <div class="note">
+     <b>
+      Always-on (كل يوم بأي وضع):
+     </b>
+    <span>tour + أول ستوري = فتح الباب + صباح الخير </span>
+     الجديد.Reel وبعدها: قطعة اليوم بالألوان والمقاسات، شحنات خرجت للتوصيل، وستوري للـ 
+    </div>
+   </section>
+   <section id="sale">
+    <h2>
+     <span class="si">
+      🔥
+     </span>
+     <span>
+      Sale Flow 🔥
+     </span>
+    </h2>
+    <p class="lead">
+     لما يكون عنا قطع Sale: اتبعي هالتسلسل. صوّري الرف أولاً وقولي هالقطع Sale، بعدين كل قطعة بستوري مع الألوان والمقاسات والسعر القديم والجديد، وقطع قليلة = ستعجلو بالطلب.
+    </p>
+    <ol class="shots card">
+     <li>
+      <span class="t">
+       S1
+      </span>
+      <div>
+       صوّري الـSale rack كامل بلقطة سريعة واحدة وقولي: “هالقطع كلها Sale اليوم”.
+       <span class="ot">
+        ✍️ On screen: SALE 🔥 These pieces are on sale · Swipe for each one 👉
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S2
+      </span>
+      <div>
+       كل قطعة بستوري لحالها (كرري لكل قطعة): قطعة عالـhanger، لفّة، قريبة للقماش، بعدها لابسة عليها.
+       <span class="ot">
+        ✍️ On screen: Piece name · Was
+        <s>
+         <mark>
+          __
+         </mark>
+        </s>
+        → NOW
+        <mark>
+         __
+        </mark>
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S3
+      </span>
+      <div>
+       بنفس الستوري أو التالية: صوّري الألوان المتوفرة جنب بعض والمقاسات بإيدك أو ستيكر.
+       <span class="ot">
+        ✍️ On screen: Colours:
+        <mark>
+         __
+        </mark>
+        ·
+        <mark>
+         __
+        </mark>
+        ·
+        <mark>
+         __
+        </mark>
+        | Sizes available: S · M · L
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S4
+      </span>
+      <div>
+       أي قطعة في منا قطع قليلة: صوّري القطع القليلة المتبقية.
+       <span class="ot">
+        ✍️ On screen: Only
+        <mark>
+         __
+        </mark>
+        pieces left! 🏃‍♀️ Whoever wants it, DM now
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S5
+      </span>
+      <div>
+       ستوري خلاصة: كل القطع الـSale (collage) وسعر قديم/جديد جنب بعض.
+       <span class="ot">
+        ✍️ On screen: All SALE pieces 🔥 Old vs New prices
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S6
+      </span>
+      <div>
+     . “Sold out” كل ما تنباع قطعة وتخلص بحط: ستوري 
+       <span class="ot">
+        ✍️ On screen: SOLD OUT, Thank you for orders!
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       S7
+      </span>
+      <div>
+       ختام: كيف تطلبي (DM + رقم + توصيل).
+       <span class="ot">
+        ✍️ On screen: DM to order · 81 547 140 · Delivery across Lebanon 🚚
+       </span>
+      </div>
+     </li>
+    </ol>
+   </section>
+   <section id="collection">
+    <h2>
+     <span class="si">
+      ✨
+     </span>
+     <span>
+      New Collection Setup & Stay Tuned
+     </span>
+    </h2>
+    <p class="lead">
+     تسلسل 7 ستوريز لتجهيز الجمهور قبل الكولكشن الجديدة.
+    </p>
+    <ol class="shots card">
+     <li>
+      <span class="t">
+       C1
+      </span>
+      <div>
+   قبل الإطلاق بـ5 أيام: صوّري رف أو صندوق  .
+       <span class="ot">
+        ✍️ On screen: Something NEW is coming… 👀 Stay tuned
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C2
+      </span>
+      <div>
+       Countdown sticker بيوم الإطلاق + صوّري كرتونة مسكّرة.
+       <span class="ot">
+        ✍️ On screen: New Collection ⏳ [Countdown]
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C3
+      </span>
+      <div>
+       Sneak peek: قريبة جداً للقماش أو اللون بدون وجه القطعة كاملة.
+       <span class="ot">
+        ✍️ On screen: Can you guess the colour? 🤍 [Poll]
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C4
+      </span>
+      <div>
+       Set up: ترتيب الرفوف، تعليق القطع، تحضير الـmannequin والإضاءة (time-lapse).
+       <span class="ot">
+        ✍️ On screen: Setting up something special ✨
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C5
+      </span>
+      <div>
+       قبل يوم: لقطة للباب مسكّر مع ضو.
+       <span class="ot">
+        ✍️ On screen: Tomorrow 🔥 [Reminder sticker]
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C6
+      </span>
+      <div>
+       يوم الإطلاق: افتحي الباب والكاميرا عم تمشي وكشف الكولكشن.
+       <span class="ot">
+        ✍️ On screen: IT’S HERE 🤍 The new collection
+       </span>
+      </div>
+     </li>
+     <li>
+      <span class="t">
+       C7
+      </span>
+      <div>قطعة قطعة: ألوان + مقاسات + CTA.
+       <span class="ot">
+        ✍️ On screen: New In ·
+        
+        · Sizes · DM to order
+       </span>
+      </div>
+     </li>
+    </ol>
+   </section>
+   <section id="bank">
+    <h2>
+     <span class="si">
+      💡
+     </span>
+     <span>
+      Unlimited Story Bank
+     </span>
+    </h2>
+    <p class="lead">
+     أفكار سريعة لما بدك تعبّي ستوري: 25+ فكرة.
+    </p>
+    <div class="card">
+     <ul>
+      <li>
+       Guess the price
+      </li>
+      <li>
+       Emoji slider على القطعة
+      </li>
+      <li>
+       Rate my fit /10
+      </li>
+      <li>
+       Colour vote
+      </li>
+      <li>
+       Hanger flip
+      </li>
+      <li>
+       Fabric close-up 5s
+      </li>
+      <li>
+       Reshare زبونة
+      </li>
+      <li>
+       Size question box
+      </li>
+      <li>
+       Old Souks street shot
+      </li>
+      <li>
+       Packing time-lapse
+      </li>
+      <li>
+       Stock alert آخر قطعة
+      </li>
+      <li>
+       Dress up / down
+      </li>
+      <li>
+       Owner’s pick
+      </li>
+      
+      <li>
+       Outfit حسب الطقس
+      </li>
+      <li>
+       Thank-you shout-out
+      </li>
+     
+      <li>
+       Day-in-the-life boomerang
+      </li>
+      <li>
+       Mirror selfie OOTD
+      </li>
+      <li>
+       Price drop alert 🔻
+      </li>
+      <li>
+       Back in stock 🔁
+      </li>
+      <li>
+       Which colour next? Poll
+      </li>
+      <li>
+       Fabric touch ASMR
+      </li>
+      <li>
+       Complete the look (3 pieces)
+      </li>
+      
+      <li>
+       Compare 2 pieces
+      </li>
+      <li>
+       Quiz: guess the fabric
+      </li>
+      <li>
+       Store music mood + outfit
+      </li>
+     </ul>
+    </div>
+   </section>
+   <section id="w1">
+    <h2>
+     <span class="si">
+      🎬
+     </span>
+     <span>
+      Week 1
+     </span>
+    </h2>
+    <p class="lead">
+     6 Reels + 3 Carousels + Feed Posts لهالأسبوع. كبّسي على أي وحدة لتفتحيها.
+    </p>
+    <h3 class="sub-h" style="border:0;margin-top:6px;padding:0">
+     🎬 6 Reels
+    </h3>
+    <p class="lead">
+    جاهزة للتصوير من الإثنين إلى السبت. كبّسي على الريل لتشوفي الـ Hook، تفاصيل كل ثانية، النص، الموسيقى، الكابشن، وتجهيزات التصوير. وفيه تنويع بالمحتوى بين:
+    Product · Informative · Interactive · Trend · Lifestyle.
+</p>
+ 
+<!-- ========== 7 DAYS · REELS ========== -->
+
+<!-- MON -->
+<details><summary><span class="ic">🛍️</span><b>Mon · Fall Jacket Lineup</b><span class="chip tag t-Product">Product</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Product">Product</span><span class="tag">~12–15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“الخريف إجا… أي جاكيت إلك؟ 🍂”</div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>لقطة ثابتة للـrack وهو فاضي، والنص “Fall 2026 🍂”. إيد بتدخل وبتعلّق أول جاكيت.</div></li>
+<li><span class="t">2–9s</span><div>كل جاكيت بلقطة ثانية ونص: الإيد بتعلّقه على الـrack مع كل beat بالموسيقى. بعد التعليق، close-up على القماش أو الجيب أو الزرار.</div></li>
+<li><span class="t">9–12s</span><div>لقطة full-body لوحدة لابسة الجاكيت الأحلى، لفة خفيفة وخطوة لقدام.</div></li>
+<li><span class="t">12–15s</span><div>كل الجاكيتات جنب بعض، والنص “Delivery all over Lebanon 🚚”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>“Pick your jacket” + رقم صغير على كل جاكيت (1، 2، 3…).</dd></div>
+<div><dt>🎵 Music</dt><dd>Upbeat وإيقاعه واضح لأن كل beat = جاكيت جديد. ابحثوا بتاب الـReels عن: fashion beat، outfit transition.</dd></div>
+<div><dt>📝 Caption</dt><dd>الخريف رسمياً بلّش 🍂 أي جاكيت من هدول بتاخديه؟ اكتبي رقمه بالكومنت 👇 التوصيل لكل لبنان 🚚 للطلب ابعتيلنا DM.</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> كل الجاكيتات المتوفرة (4–6 قطع)، rack أو علاقات، تريبود. انتبهوا إنو ما يبين أي تيكيت أو لوغو ماركة ثانية.</div></div></details>
+
+<!-- TUE -->
+<details><summary><span class="ic">💡</span><b>Tue · 1 Denim Jacket – 3 Looks</b><span class="chip tag t-Informative">Informative</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Informative">Informative</span><span class="tag">~12–14s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“جاكيت جينز واحد… 3 إطلالات 👖”</div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>Close-up على الجاكيت معلّق لوحده والنص “1 Denim Jacket”.</div></li>
+<li><span class="t">2–5s</span><div>Look 1 – Casual: تيشرت أبيض + جينز + سنيكرز. full-body وخطوة لقدام. النص “Casual”.</div></li>
+<li><span class="t">5–8s</span><div>Look 2 – Elegant: الجاكيت فوق بلوزة وبنطلون قماش. النص “Elegant”.</div></li>
+<li><span class="t">8–11s</span><div>Look 3 – Cozy: الجاكيت فوق wool top وبنطلون واسع. النص “Cozy”.</div></li>
+<li><span class="t">11–14s</span><div>الـ3 looks جنب بعض (split screen) + لقطة أخيرة للجاكيت والألوان والمقاسات المتوفرة.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>Casual / Elegant / Cozy على كل look.</dd></div>
+<div><dt>🎵 Music</dt><dd>ترند فيه transitions سريعة. التنقل بين اللوكات: تغطية العدسة بالإيد وفتحها وهي لابسة اللوك الجديد.</dd></div>
+<div><dt>📝 Caption</dt><dd>جاكيت واحد = أسبوع كامل 🙌 أي look الأقرب لإلك؟ اكتبي 1 أو 2 أو 3 بالكومنت. للطلب ابعتيلنا DM 🤍</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> جاكيت جينز، تيشرت أبيض، جينز أو بنطلون قماش، wool top، سنيكرز وحذاء أنيق، مرايا أو خلفية موحدة.</div></div></details>
+
+<!-- WED (replaced) -->
+<details><summary><span class="ic">🎯</span><b>Wed · Know Your Jeans: Which Fit Is Yours?</b><span class="chip tag t-Interactive">Interactive</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Interactive">Interactive</span><span class="tag">~15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“شو نوع الجينز يلي بيشبهك؟ 👖”</div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>4 جينز معلّقين جنب بعض، والنص “Which jeans are you?”.</div></li>
+<li><span class="t">2–5s</span><div>Mom Jeans: خصر عالي، لفّة وخطوة لقدام. النص “Mom Jeans 💁‍♀️ الكلاسيك”.</div></li>
+<li><span class="t">5–8s</span><div>Straight: نفس الوقفة. النص “Straight ✨ بيمشي مع كل شي”.</div></li>
+<li><span class="t">8–11s</span><div>Wide Leg: حركة بتبيّن الواسع. النص “Wide Leg 🌊 مريح وستايل”.</div></li>
+<li><span class="t">11–13s</span><div>Flare: النص “Flare 🔥 للجريئات”.</div></li>
+<li><span class="t">13–15s</span><div>النص الكبير: “اكتبي رقمك بالكومنت 👇 1 · 2 · 3 · 4”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>اسم الجينز + رقمو (1–4) + جملة قصيرة.</dd></div>
+<div><dt>🎵 Music</dt><dd>Beat واضح، كل نوع على beat. ابحثوا: fashion beat, outfit transition.</dd></div>
+<div><dt>📝 Caption</dt><dd>أي جينز إلك؟ 👖 اكتبي رقمو بالكومنت وبنعرفلك أي look بيناسبو 😉 وابعتي الريل لصاحبتك يلي بتقول “ما لقيت جينز يعجبني”! للطلب DM 🤍</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> 4 أنواع جينز بنفس القماش والخلفية، تيشرت أبيض موحّد، سنيكرز، تريبود.</div></div></details>
+
+<!-- THU -->
+<details><summary><span class="ic">🔥</span><b>Thu · “I Have Nothing to Wear” – Outfit Change</b><span class="chip tag t-Trend">Trend</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Trend">Trend</span><span class="tag">~8–10s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“POV: لما بتقولي ما عندي شي ألبسه 😅”</div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>لابسة look بسيط (تيشرت وجينز)، واقفة قدام الـrack بتعمل حركة “ما عندي شي”. النص: POV.</div></li>
+<li><span class="t">2–3s</span><div>Snap بالإصبع أو beat drop: تبديل مفاجئ للـLook 1 (جاكيت جينز).</div></li>
+<li><span class="t">3–5s</span><div>نفس الحركة والتبديل للـLook 2 (كوت طويل).</div></li>
+<li><span class="t">5–7s</span><div>تبديل للـLook 3 (wool top وجاكيت).</div></li>
+<li><span class="t">7–9s</span><div>نظرة للكاميرا والنص “…والرف كلو عندنا 🛍️”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>“Me: I have nothing to wear” → “Also me:”</dd></div>
+<div><dt>🎵 Music</dt><dd>ترند فيه beat drop واضح (الانتقالات تمشي على الـdrop). ابحثوا: outfit change, snap transition.</dd></div>
+<div><dt>📝 Caption</dt><dd>كل مرة بتقولي ما عندي شي ألبسه 😅 احكيلنا بالكومنت شو القطعة اللي بتنقذك دايماً؟ 🤍 وابعتيها لصاحبتك اللي بتقولها كل يوم!</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> مرايا طويلة أو مساحة فاضية، 3 looks جاهزين بترتيب، ثبات الكاميرا (تريبود).</div></div></details>
+
+<!-- FRI -->
+<details><summary><span class="ic">🌿</span><b>Fri · A Morning at the Shop – Old Souks, Tyre</b><span class="chip tag t-Lifestyle">Lifestyle</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Lifestyle">Lifestyle</span><span class="tag">~12–15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“كل صبح من قلب سوق صور القديم ☕”</div>
+<ol class="shots">
+<li><span class="t">0–3s</span><div>فتح باب المحل أو الشباك بلقطة من الداخل للخارج (الإضاءة الطبيعية).</div></li>
+<li><span class="t">3–6s</span><div>لقطة سريعة من برا: واجهة المحل وجزء من السوق.</div></li>
+<li><span class="t">6–9s</span><div>ترتيب الـrack وتبخير قطعة (steamer) أو تعليق جاكيت.</div></li>
+<li><span class="t">9–12s</span><div>قهوة جنب القطع، الإيد بتعدّل علاقة.</div></li>
+<li><span class="t">12–15s</span><div>لقطة وسيعة للمحل والنص “Awally – Old Souks, Tyre 📍”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>“Good morning from Tyre ☕” + “Awally – Old Souks 📍”.</dd></div>
+<div><dt>🎵 Music</dt><dd>Lo-fi أو أغنية عربية هادية ودافية. ابحثوا: morning vibes, cozy shop.</dd></div>
+<div><dt>📝 Caption</dt><dd>من قلب سوق صور القديم 📍 وبتوصلك الموضة لباب بيتك بكل لبنان 🚚 مين هون من صور؟ 🙋‍♀️</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> صباح قبل الدوام أو أول ما يفتح المحل، قهوة، بخّار أو فرشاية، تريبود صغير. بدون وجوه واضحة لناس بالسوق.</div></div></details>
+
+<!-- SAT -->
+<details><summary><span class="ic">🌿</span><b>Sat · Pack an Order With Me</b><span class="chip tag t-Lifestyle">Lifestyle</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Lifestyle">Lifestyle</span><span class="tag">~15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“ورد طلب جديد… تعالي شوفي كيف منجهزه 📦”</div>
+<ol class="shots">
+<li><span class="t">0–3s</span><div>شاشة الطلب (بدون اسم أو رقم) أو ورقة الطلب، وإيد بتاخد القطعة من الـrack.</div></li>
+<li><span class="t">3–7s</span><div>طي القطعة وتغليفها: لقطة من فوق (top-down).</div></li>
+<li><span class="t">7–11s</span><div>إضافة التغليف: الكيس، الكرت، ستيكر اللوغو.</div></li>
+<li><span class="t">11–15s</span><div>الطلب جاهز مع النص “Ready to ship 🚚”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>“Order ready” فقط، بدون أي معلومات شخصية.</dd></div>
+<div><dt>🎵 Music</dt><dd>صوت طبيعي (ASMR) لصوت الورق والتغليف، أو موسيقى هادية. بعدين نحطه بـHighlight “Packing”.</dd></div>
+<div><dt>📝 Caption</dt><dd>كل طلب بنجهزه بحب 🤍 والتوصيل لكل لبنان 🚚 للطلب ابعتيلنا DM.</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> طلب حقيقي (أو قطعة)، كيس أو علبة التغليف مع اللوغو الجديد، بطاقة شكر. ممنوع يبين اسم أو رقم الزبونة.</div></div></details>
+
+<!-- SUN (replaces deleted "3 Mistakes" reel) -->
+<details><summary><span class="ic">🔥</span><b>Sun · University Inspo: 5 Days, 5 Outfits</b><span class="chip tag t-Trend">Trend</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Trend">Trend</span><span class="tag">~15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“5 أيام جامعة… 5 إطلالات، ولا مرة تعيدي 🎒”</div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>شنطة عالكتف وكتاب بإيدها، والنص “Uni week, sorted 🎒”.</div></li>
+<li><span class="t">2–5s</span><div>Mon: كنزة صوف + جينز straight. النص “Monday · Cozy”.</div></li>
+<li><span class="t">5–8s</span><div>Tue: جاكيت جينز + wide leg. النص “Tuesday · Denim Day”.</div></li>
+<li><span class="t">8–11s</span><div>Wed: طقم (set) مرتّب. النص “Wednesday · Presentation Day”.</div></li>
+<li><span class="t">11–13s</span><div>Thu: جاكيت دافي + mom jeans. Fri: لوك مرتاح. النص “Thu · Fri”.</div></li>
+<li><span class="t">13–15s</span><div>الـ5 looks split screen، والنص “Which day is your fav? 👇”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>نص على الشاشة</dt><dd>اسم اليوم + mood اللوك.</dd></div>
+<div><dt>🎵 Music</dt><dd>Upbeat، كل يوم على beat. الانتقال: خطوة وكبسة إصبع. ابحثوا: back to uni, outfit week.</dd></div>
+<div><dt>📝 Caption</dt><dd>جدول الجامعة جاهز 🎒 أي يوم هو الأحلى؟ احفظيه وابعتيه لرفيقتك من الجامعة 📌 كل القطع عنا بصور والتوصيل لكل لبنان 🚚</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> 5 looks مرتّبين بالدور، شنطة، مكان بسيط أو خلفية موحّدة. كل قطعة لازم تكون متوفرة بالمحل.</div></div></details>
+
+<!-- ========== BONUS / EXTRA REELS ========== -->
+<h3 class="sub-h">✨ More Reel Ideas (لما يكون عندك وقت)</h3>
+
+<!-- POV uni outfit (new) -->
+<details><summary><span class="ic">🛍️</span><b>POV: Looking for a Uni Outfit</b><span class="chip tag t-Product">Product</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Product">Product</span><span class="tag">~12–15s</span></div>
+<div class="hook"><small>Hook (أول ثانيتين)</small>“عم دوّر على outfit للجامعة… ولقيتو 😍”</div>
+<ol class="shots">
+<li><span class="t">0–3s</span><div>موبايل بإيدها عم تسكرول بدون ما تلاقي شي. النص “Me looking for a uni outfit… 🙄”.</div></li>
+<li><span class="t">3–6s</span><div>بتفوت عالمحل، الـrack، وبتسحب القطع وحدة وحدة (جاكيت، بنطلون، كنزة).</div></li>
+<li><span class="t">6–10s</span><div>Transition بإيد عالعدسة: بتطلع لابسة الـfull outfit. النص “Full outfit ✅”.</div></li>
+<li><span class="t">10–13s</span><div>لقطة تفصيل: الشنطة والجاكيت. النص “كل القطع متوفرة بـAwally 🛍️”.</div></li>
+<li><span class="t">13–15s</span><div>النص “Outfit كامل ·  · Delivery all over Lebanon 🚚”.</div></li>
+</ol>
+<dl class="info">
+<div><dt>🎵 Music</dt><dd>ترند فيه drop واضح للتبديل. ابحثوا: outfit transition, that's it.</dd></div>
+<div><dt>📝 Caption</dt><dd>لما بدك outfit كامل للجامعة وما بدك تفكري كتير 😅 كلو بمحل واحد بقلب سوق صور 📍 للطلب ابعتيلنا DM.</dd></div>
+</dl>
+<div class="tip">🎥 <b>جهّزوا:</b> كامل جاهز بالمقاس، شنطة، نص صغير فيه رقم  ـoutfit كامل.</div></div></details>
+
+<details><summary><span class="ic">🎯</span><b>Guess the Price</b><span class="chip tag t-Interactive">Interactive</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Interactive">Interactive</span><span class="tag">~10s</span></div>
+<div class="hook"><small>Hook</small>“خمّني سعر هالجاكيت 👀”</div>
+<ol class="shots">
+<li><span class="t">0–3s</span><div>لقطة قريبة للجاكيت، والنص “Guess the price 💸”.</div></li>
+<li><span class="t">3–7s</span><div>لابسة الجاكيت: لفّة وخطوة. النص “Looks expensive, right?”.</div></li>
+
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>مين عرف السعر ؟ 👀 </dd></div></dl></div></details>
+
+<details><summary><span class="ic">🔥</span><b>Lebanese Girl Problems: قدام الخزانة</b><span class="chip tag t-Trend">Trend</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Trend">Trend</span><span class="tag">~12s</span></div>
+<div class="hook"><small>Hook</small>“ماما: يلا تأخرنا! أنا: لحظة بس…”</div>
+<ol class="shots">
+<li><span class="t">0–4s</span><div>بنت قدام الخزانة بتجرّب 3 قطع بسرعة. النص “5 دقايق وجاهزة 😌”.</div></li>
+<li><span class="t">4–8s</span><div>الساعة بتمشي، ونص “بعد ساعة…”، وهي لسا بتبدّل.</div></li>
+<li><span class="t">8–12s</span><div>بتلبس الجاكيت الأخير وبتبسم. النص “ما في أحلى من هيك 🤍 Awally”.</div></li>
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>شو بتقولي لإمك قبل ما تطلعي؟ 😂 احكيلنا بالكومنت وتاغي صاحبتك!</dd></div></dl></div></details>
+
+<details><summary><span class="ic">🌿</span><b>From Tyre to Your Door 🚚</b><span class="chip tag t-Lifestyle">Lifestyle</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Lifestyle">Lifestyle</span><span class="tag">~15s</span></div>
+<div class="hook"><small>Hook</small>“طلبك بيطلع من صور… وبيوصلك وين ما كنتي 📦”</div>
+<ol class="shots">
+<li><span class="t">0–4s</span><div>رسالة DM بالموبايل (بدون اسم)، وبعدها القطعة بتطلع من الـrack.</div></li>
+<li><span class="t">4–9s</span><div>تغليف سريع، ولقطة لخريطة لبنان مع دبوس على صور. النص “Tyre → All of Lebanon”.</div></li>
+<li><span class="t">9–15s</span><div>إيد بتفتح الباكيج عند بنت (من دون وجه)، والنص “Delivered with love 🤍”.</div></li>
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>من قلب سوق صور لباب بيتك بأي منطقة بلبنان 🇱🇧 كل طلب بنجهزو بحب 🤍 ابعتيلنا DM!</dd></div></dl></div></details>
+
+<details><summary><span class="ic">🛍️</span><b>Hero Piece: Detail Showcase</b><span class="chip tag t-Product">Product</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Product">Product</span><span class="tag">~20s</span></div>
+<div class="hook"><small>Hook (first 2 seconds)</small>“هالقطعة بتبيّن غالية… وسعرها مفاجأة 😍” <i>This looks expensive… the price will surprise you</i></div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>قريبة جداً للقماش وهو عم يتحرك. ✍️ “Looks expensive?”</div></li>
+<li><span class="t">2–5s</span><div>القطعة كاملة عالـhanger، لفّة 360 بطيئة. ✍️ “Meet the <mark>[name]</mark>”</div></li>
+<li><span class="t">5–9s</span><div>3 لقطات تفاصيل بسرعة: خياطة، سحّاب/أزرار، جيب. ✍️ “Details that matter”</div></li>
+<li><span class="t">9–14s</span><div>الموديل لابسة: مشية ثم لفّة. ✍️ “Size M · 168cm”</div></li>
+<li><span class="t">14–18s</span><div>كل الألوان جنب بعض. ✍️ “Colours: pink · blue · beige”</div></li>
+<li><span class="t">18–20s</span><div>✍️ “ DM to order”</div></li>
+</ol>
+<dl class="info">
+<div><dt>🎵 Music</dt><dd>Soft luxury beat (دوّري “elegant fashion” بالـReels audio)</dd></div>
+<div><dt>📝 Caption</dt><dd>“وعدناكم بالتفاصيل 🤍 قماش بيريّح  . Colours/Sizes: DM. #Tyre #LebanonFashion #AwallyStore”</dd></div>
+</dl>
+<div class="tip">🎥 <b>تصوير:</b> قطّعي كل لقطة على الـbeat، وصوّري التفاصيل من قريب جداً.</div></div></details>
+
+<details><summary><span class="ic">🛍️</span><b>Same Piece, Every Colour</b><span class="chip tag t-Product">Product</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Product">Product</span><span class="tag">~20s</span></div>
+<div class="hook"><small>Hook (first 2 seconds)</small>“زهري ولا أزرق؟ ما بدك تختاري 💗💙” <i>Pink or blue? You don’t have to choose</i></div>
+<ol class="shots">
+<li><span class="t">0–2s</span><div>✍️ “Which colour are you?”</div></li>
+<li><span class="t">2–6s</span><div>تبديل hanger بين 4–5 ألوان على الـbeat.</div></li>
+<li><span class="t">6–12s</span><div>الموديل بكل لون، قطعة لكل beat.</div></li>
+<li><span class="t">12–16s</span><div>قريبة للقماش.</div></li>
+<li><span class="t">16–20s</span><div>لونين جنب بعض. ✍️ “Vote in our Story” “DM to order · Delivery across Lebanon 🚚 · 81 547 140”</div></li>
+</ol>
+<dl class="info">
+<div><dt>🎵 Music</dt><dd>Trending beat بـdrops واضحة</dd></div>
+<div><dt>📝 Caption</dt><dd>“نفس القطعة بشخصية مختلفة 💗💙 أي لون إلك؟ #ColourGoals”</dd></div>
+</dl>
+<div class="tip">🎥 <b>تصوير:</b> موبايل عمودي 9:16، ضو الشباك بدون flash، نفس الخلفية الكريم، الكاميرا ثابتة أو بحركة بطيئة.</div></div></details>
+
+<!-- ========== CAROUSELS ========== -->
+<h3 class="sub-h">📚 3 Carousels</h3>
+
+<details><summary><span class="ic">🛍️</span><b>Tue · Denim Jacket in All Colors</b><span class="chip tag t-Product">Product</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Product">Product</span><span class="tag">Carousel</span><span class="tag">1:00–3:00 PM</span></div>
+<div class="hook"><small>Cover (Slide 1)</small>“1 Denim Jacket · All Colors 👖”</div>
+<ol class="shots">
+<li><span class="t">S1</span><div>Cover: الجاكيت باللون الأساسي على خلفية كريم. ✍️ “1 Jacket · All Colors”</div></li>
+<li><span class="t">S2</span><div>اللون الأول: علاقة + close-up على القماش</div></li>
+<li><span class="t">S3</span><div>اللون الثاني بنفس الزاوية</div></li>
+<li><span class="t">S4</span><div>اللون الثالث بنفس الزاوية</div></li>
+<li><span class="t">S5</span><div>كل الألوان جنب بعض + المقاسات. ✍️ “Sizes: S · M · L · XL”</div></li>
+<li><span class="t">S6</span><div>✍️ “DM to order · Delivery all over Lebanon 🚚”</div></li>
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>جاكيت واحد وكل الألوان 👖 أي لون إلك؟ احفظي المنشور وابعتيلنا DM للطلب. التوصيل لكل لبنان 🚚 #AwallyStore #Tyre</dd></div></dl>
+<div class="tip">🎨 نفس الخلفية والخط والألوان بكل السلايدات، النص الكبير بنص الصورة، وآخر سلايد دايماً CTA.</div></div></details>
+
+<details><summary><span class="ic">💡</span><b>Thu · Fall Jacket Guide: Which Jacket for Which Day?</b><span class="chip tag t-Informative">Informative</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Informative">Informative</span><span class="tag">Carousel</span><span class="tag">1:00–3:00 PM</span></div>
+<div class="hook"><small>Cover (Slide 1)</small>“أي جاكيت لأي يوم؟ 🍂”</div>
+<ol class="shots">
+<li><span class="t">S1</span><div>Cover: 3 جاكيتات معلّقة. ✍️ “Which jacket for which day?”</div></li>
+<li><span class="t">S2</span><div>يوم الدوام: جاكيت أنيق + بنطلون قماش. ✍️ “Work day”</div></li>
+<li><span class="t">S3</span><div>يوم الطلعة: جاكيت جينز + تيشرت. ✍️ “Casual day”</div></li>
+<li><span class="t">S4</span><div>يوم المطر: جاكيت دافي. ✍️ “Rainy day”</div></li>
+<li><span class="t">S5</span><div>نصيحة: كيف تختاري المقاس. ✍️ “Tip: size up for layering”</div></li>
+<li><span class="t">S6</span><div>✍️ “DM to order · Delivery all over Lebanon 🚚”</div></li>
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>احفظيه لما تحتاريه الصبح 📌 أي يوم إنتي اليوم؟ #FallStyle #AwallyStore</dd></div></dl>
+<div class="tip">🎨 نفس الخلفية والخط والألوان بكل السلايدات، النص الكبير بنص الصورة، وآخر سلايد دايماً CTA.</div></div></details>
+
+<details><summary><span class="ic">🌿</span><b>Sat · Meet Awally: Old Souks, Tyre</b><span class="chip tag t-Lifestyle">Lifestyle</span></summary><div class="body">
+<div class="tagrow"><span class="tag t-Lifestyle">Lifestyle</span><span class="tag">Carousel</span><span class="tag">1:00–3:00 PM</span></div>
+<div class="hook"><small>Cover (Slide 1)</small>“Meet Awally 🤍 Old Souks, Tyre”</div>
+<ol class="shots">
+<li><span class="t">S1</span><div>Cover: واجهة المحل مع اللوغو. ✍️ “Meet Awally”</div></li>
+<li><span class="t">S2</span><div>داخل المحل: الرفوف. ✍️ “Curated styles”</div></li>
+<li><span class="t">S3</span><div>القطع: Jackets · Knits · Sets · Pajamas · Bags. ✍️ “What we have”</div></li>
+<li><span class="t">S4</span><div>صاحبة المحل أو الفريق (إذا بتحبوا). ✍️ “Who we are”</div></li>
+<li><span class="t">S5</span><div>الموقع والدوام. ✍️ “📍 Old Souks, Tyre · <mark>[Hours]</mark>”</div></li>
+<li><span class="t">S6</span><div>✍️ “DM to order · Delivery all over Lebanon 🚚”</div></li>
+</ol>
+<dl class="info"><div><dt>📝 Caption</dt><dd>أهلاً فيكي بـAwally 🤍 محلنا بقلب الأسواق القديمة بصور، والتوصيل لكل لبنان. #Tyre #OldSouks</dd></div></dl>
+<div class="tip">🎨 نفس الخلفية والخط والألوان بكل السلايدات، النص الكبير بنص الصورة، وآخر سلايد دايماً CTA.</div></div></details>
+
+<!-- ========== FEED POSTS ========== -->
+<h3 class="sub-h">🖼️ Feed Posts (3–5)</h3>
+<div class="two">
+<div class="card star">
+<h3>Week 1</h3>
+<ul>
+<li>Monday: Product detail للقطعة الأكثر طلباً (3 صور )</li>
+<li>Wednesday: بوست هوية: “Curated styles, timeless elegance”</li>
+<li>Friday: New In بصورة وحدة قوية</li>
+<li>Saturday: Feedback زبونة (بدون اسم أو رقم)</li>
+<li>Sunday: صورة “Uni Week” لأحلى look من ريل الجامعة 🎒</li>
+</ul>
+</div>
+</div>
+   <section id="w2">
+    <h2>
+     <span class="si">
+      🔒
+     </span>
+     <span>
+      Week 2
+     </span>
+    </h2>
+    <div class="card star" id="lb2">
+     <p class="lead" style="margin:0 0 10px">
+      🔒 هالأسبوع مقفول. بينفتح لما تخلّصي Week 1، وبنبعتلك الرمز.
+     </p>
+     <div class="pw">
+      <input autocapitalize="characters" autocomplete="off" id="in2" placeholder="Enter code" type="password"/>
+      <button id="bt2">
+       Unlock
+      </button>
+     </div>
+     <p class="msg m" id="ms2">
+     </p>
+     <p class="m" style="margin:6px 0 0">
+      إذا ما اشتغل الزر افتحي الملف بـSafari أو Chrome.
+     </p>
+    </div>
+    <div hidden="" id="sl2">
+    </div>
+   </section>
+   <section id="w3">
+    <h2>
+     <span class="si">
+      🔒
+     </span>
+     <span>
+      Week 3
+     </span>
+    </h2>
+    <div class="card star" id="lb3">
+     <p class="lead" style="margin:0 0 10px">
+      🔒 هالأسبوع مقفول. بينفتح لما تخلّصي Week 2، وبنبعتلك الرمز.
+     </p>
+     <div class="pw">
+      <input autocapitalize="characters" autocomplete="off" id="in3" placeholder="Enter code" type="password"/>
+      <button id="bt3">
+       Unlock
+      </button>
+     </div>
+     <p class="msg m" id="ms3">
+     </p>
+     <p class="m" style="margin:6px 0 0">
+      إذا ما اشتغل الزر افتحي الملف بـSafari أو Chrome.
+     </p>
+    </div>
+    <div hidden="" id="sl3">
+    </div>
+   </section>
+   <section id="w4">
+    <h2>
+     <span class="si">
+      🔒
+     </span>
+     <span>
+      Week 4
+     </span>
+    </h2>
+    <div class="card star" id="lb4">
+     <p class="lead" style="margin:0 0 10px">
+      🔒 هالأسبوع مقفول. بينفتح لما تخلّصي Week 3، وبنبعتلك الرمز.
+     </p>
+     <div class="pw">
+      <input autocapitalize="characters" autocomplete="off" id="in4" placeholder="Enter code" type="password"/>
+      <button id="bt4">
+       Unlock
+      </button>
+     </div>
+     <p class="msg m" id="ms4">
+     </p>
+     <p class="m" style="margin:6px 0 0">
+      إذا ما اشتغل الزر افتحي الملف بـSafari أو Chrome.
+     </p>
+    </div>
+    <div hidden="" id="sl4">
+    </div>
+   </section>
+   <section id="creative">
+    <h2>
+     <span class="si">
+      🎨
+     </span>
+     <span>
+      Creative Boost ✨
+     </span>
+    </h2>
+    <p class="lead">
+     أفكار إضافية لتعطي الصفحة هوية وتخلّي المحتوى مميز ومرتّب.
+    </p>
+    <details>
+     <summary>
+      <span class="ic">
+       📅
+      </span>
+      <b>
+       Weekly Series (نفس الاسم كل أسبوع)
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        <b>
+         Mon · New In Monday:
+        </b>
+        قطعة جديدة كل إثنين بنفس المقدمة (نفس النص والصوت)، عشان الناس تتعوّد.
+        <span class="ot">
+         ✍️ On screen tag: NEW IN MONDAY ✨
+        </span>
+       </li>
+       <li>
+        <b>
+         Tue · Style Tuesday:
+        </b>
+        قطعة وحدة بـ3 لوكات.
+        <span class="ot">
+         ✍️ On screen tag: 1 piece · 3 looks
+        </span>
+       </li>
+       <li>
+        <b>
+         Wed · Behind the Counter:
+        </b>
+        تغليف، كوي، فتح كراتين.
+        <span class="ot">
+         ✍️ On screen tag: Behind the counter 🎬
+        </span>
+       </li>
+       <li>
+        <b>
+         Thu · Ask Awally:
+        </b>
+        أسئلة الزبونات وأجوبتها (مقاسات، ألوان، توصيل).
+        <span class="ot">
+         ✍️ On screen tag: Ask Awally 💬
+        </span>
+       </li>
+       <li>
+        <b>
+         Fri · Fit Check Friday:
+        </b>
+        طلّة الويكند + تقييم من 10.
+        <span class="ot">
+         ✍️ On screen tag: Fit check /10
+        </span>
+       </li>
+       <li>
+        <b>
+         Sat · Sale Saturday:
+        </b>
+        آخر القطع والعروض.
+        <span class="ot">
+         ✍️ On screen tag: Last pieces 🔥
+        </span>
+       </li>
+       <li>
+        <b>
+         Sun · Slow Sunday:
+        </b>
+        Recap الأسبوع وشكر الزبونات.
+        <span class="ot">
+         ✍️ On screen tag: Slow Sunday ☕
+        </span>
+       </li>
+      </ul>
+      <p class="m">
+       نفس الاسم كل أسبوع بيخلّي الصفحة معروفة بـ“مواعيد” ثابتة، وبيسهّل التصوير.
+      </p>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🎣
+      </span>
+      <b>
+       Hook Bank (24 hook)
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        Stop scrolling if you wear size M 👀
+       </li>
+       <li>
+        POV: لقيتي الطقم المثالي
+       </li>
+       <li>
+        3 أشياء قبل ما تشتري جاكيت
+       </li>
+       <li>
+        لما تسألك صاحبتك من وين هالطلّة 😏
+       </li>
+       <li>
+        شي بيبين غالي بس سعره مفاجأة
+       </li>
+       <li>
+        هالقطعة ما بتضل بالمحل!
+       </li>
+       <li>
+        سر ما حدا بيقلك عن المقاسات
+       </li>
+       <li>
+        Rate this outfit /10
+       </li>
+       <li>
+        لون واحد بيركب مع كل شي
+       </li>
+       <li>
+        لا تشتري قبل ما تشوفي هالفيديو
+       </li>
+       <li>
+        Wait for the sale? This is your sign
+       </li>
+       <li>
+        أكتر سؤال بيجينا بالـDM
+       </li>
+       <li>
+        شو بيصير بالمحل قبل ما نفتح؟
+       </li>
+       <li>
+        Outfit بـ10 ثواني
+       </li>
+       <li>
+        Before vs After styling
+       </li>
+       <li>
+        هل بتعرفي هالخدعة بالتنسيق؟
+       </li>
+       <li>
+        مين خمّن السعر صح؟
+       </li>
+       <li>
+        طلبية رايحة لحد باب بيتك 📦
+       </li>
+       <li>
+        Tag صاحبتك اللي بتحب هالستايل
+       </li>
+       <li>
+        Which one are you: A or B?
+       </li>
+       <li>
+        رح تندمي إذا ما شفتي آخر ثانية
+       </li>
+       <li>
+        لو كان عندي 3 قطع بس…
+       </li>
+       <li>
+        Same outfit، 3 مواسم
+       </li>
+       <li>
+        ليش هالقطعة أكتر وحدة انباعت؟
+       </li>
+      </ul>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       ✍️
+      </span>
+      <b>
+       Caption, CTA & Hashtags
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        CTA: DM to order 📩 · 81 547 140
+       </li>
+       <li>
+        CTA: التوصيل لكل لبنان 🚚 ابعتيلنا DM
+       </li>
+       <li>
+        CTA: احفظي المنشور وارجعيله 📌
+       </li>
+       <li>
+        CTA: احكيلنا رقم الـlook بالكومنت 👇
+       </li>
+       <li>
+        CTA: Tag صاحبتك اللي لازم تشوف هالقطعة
+       </li>
+       <li>
+        CTA: جاوبي بكلمة NEW ووصلك الجديد أول وحدة
+       </li>
+       <li>
+        Opener: وعدناكم… وصل 🤍
+       </li>
+       <li>
+        Opener: سؤالكم الأكتر!
+       </li>
+       <li>
+        Opener: شو رأيك: A ولا B؟
+       </li>
+       <li>
+        Hashtags: #Tyre #صور #LebanonFashion #AwallyStore #OOTD #ModestFashion (6–8 بس)
+       </li>
+      </ul>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🗓️
+      </span>
+      <b>
+       Monthly Campaigns
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        <b>
+         Oct:
+        </b>
+        Fall Starts Here: جاكيتات، wool tops، Sets.
+       </li>
+       <li>
+        <b>
+         Nov:
+        </b>
+        Winter capsule + Black Friday (27 Nov): Sale flow كامل.
+       </li>
+       <li>
+        <b>
+         Dec:
+        </b>
+        Gift guide + New Year outfit.
+       </li>
+       <li>
+        <b>
+         Jan:
+        </b>
+        Winter sale + New Year New Style.
+       </li>
+       <li>
+        <b>
+         Feb–Mar:
+        </b>
+        Spring teaser + Eid/Ramadan collection (تحققي من التواريخ).
+       </li>
+       <li>
+        <b>
+         21 Mar:
+        </b>
+        Mother’s Day: هدايا + Reel عاطفي.
+       </li>
+      </ul>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🎥
+      </span>
+      <b>
+       Batch Filming Day
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        يوم تصوير واحد بالأسبوع (3 ساعات) = 6 Reels + Stories جاهزة.
+       </li>
+       <li>
+        قبل: كوي القطع، رتّبي الرفوف، نضّفي المراية، اختاري الـoutfits حسب الريلز.
+       </li>
+       <li>
+        الترتيب: لقطات المحل (Tour) أولاً، ثم Details، ثم Try-on، ثم Lifestyle.
+       </li>
+       <li>
+        صوّري كل Reel بنفس الخلفية والإضاءة، وخذي 3 takes للـhook.
+       </li>
+       <li>
+        عدّة: Tripod، ring light أو ضو شباك، steamer، علاقات موحّدة، بطاقات سعر، قهوة/إكسسوار كـprops.
+       </li>
+       <li>
+        بعد: اختاري الصوت من Trending، وحطي الكابشن من القسم، وجدولي النشر.
+       </li>
+      </ul>
+     </div>
+    </details>
+    <details>
+     <summary>
+      <span class="ic">
+       🤝
+      </span>
+      <b>
+       Engagement Boosters
+      </b>
+     </summary>
+     <div class="body" style="padding:12px 22px 16px">
+      <ul>
+       <li>
+        Giveaway شهري: Follow + Tag صاحبتين + شاركي القصة.
+       </li>
+       <li>
+        “Awally Style Challenge”: الزبونة تلبس القطعة وتعمل Tag (بموافقتها نعيد النشر).
+       </li>
+       <li>
+        رد على كل تعليق بـReel Reply مرة كل أسبوع.
+       </li>
+       <li>
+        Pin أحسن 3 Reels: Tour، Best seller، How to order.
+       </li>
+       <li>
+        Broadcast Channel للقطع الجديدة قبل الكل.
+       </li>
+       <li>
+        “Reorder request”: Poll كل أسبوع: أي لون نعيد؟
+       </li>
+      </ul>
+     </div>
+    </details>
+   </section>
+   <section id="calendar">
+    <h2>
+     <span class="si">
+      ⏰
+     </span>
+     <span>
+      Recommended Content Posting
+     </span>
+    </h2>
+    <p class="lead">
+     جدول نشر مقترح يساعدك على الحفاظ على consistency وزيادة فرص الوصول والتفاعل، مع إمكانية تعديل عدد المنشورات حسب توفر المحتوى.
+    </p>
+    <div class="grid">
+     <div class="card">
+      <h3>
+       🎬 Reels
+      </h3>
+      <ul>
+       <li>
+        <b>
+         Recommended:
+        </b>
+        1 Reel per day
+       </li>
+       <li>
+        <b>
+         Minimum:
+        </b>
+        5–7 Reels per week
+       </li>
+       <li>
+        يعتمد العدد النهائي على توفر المحتوى الجاهز للتصوير والنشر.
+       </li>
+       <li>
+        <b>
+         Best time to post:
+        </b>
+        4:00 PM – 9:00 PM
+       </li>
+      </ul>
+     </div>
+     <div class="card">
+      <h3>
+       ◌ Stories
+      </h3>
+      <ul>
+       <li>
+        <b>
+         Recommended:
+        </b>
+        4–6 Stories per day
+       </li>
+       <li>
+        <b>
+         Suggested times:
+        </b>
+       </li>
+       <li>
+        12:00 PM – 2:00 PM
+       </li>
+       <li>
+        2:00 PM – 4:00 PM
+       </li>
+       <li>
+        4:00 PM – 6:00 PM
+       </li>
+       <li>
+        6:00 PM – 8:00 PM
+       </li>
+       <li>
+        8:00 PM – 10:00 PM
+       </li>
+      </ul>
+     </div>
+     <div class="card">
+      <h3>
+       ▦ Posts & Carousels
+      </h3>
+      <ul>
+       <li>
+        <b>
+         Recommended:
+        </b>
+        1 Post per day
+       </li>
+       <li>
+        <b>
+         Minimum:
+        </b>
+        3–5 Posts per week
+       </li>
+       <li>
+        يمكن استخدام الـFeed Posts للـproduct details، collections، styling tips وsaveable content.
+       </li>
+       <li>
+        <b>
+         Carousels:
+        </b>
+        3 per week (minimum 2)
+       </li>
+       <li>
+        <b>
+         Best time to post:
+        </b>
+        12:00 PM – 4:00 PM
+       </li>
+      </ul>
+     </div>
+    </div>
+    <p class="note">
+     <b>
+      Weekly mix:
+     </b>
+     2 Styling Reels، 1 Colour Reel، 1 Store/BTS Reel، 1 Try-On، 1 Trust (Packing/Feedback). وكل Reel جديد منعمله share بالـStory.
+    </p>
+   </section>
+  </main>
+  <footer>
+   <div class="wrap">
+    Awally Store — Instagram Content Strategy
+   </div>
+  </footer>
+  <a aria-label="Top" href="#top" id="up">
+   ↑
+  </a>
+  <script>
+   (function(){
+var enc={"2": "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", "3": "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", "4": "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"};
+function b64(s){var b=atob(s),a=new Uint8Array(b.length);for(var i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
+function dec(n,pw){var d=b64(enc[n]);return crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]).then(function(m){return crypto.subtle.deriveKey({name:"PBKDF2",salt:d.slice(0,16),iterations:200000,hash:"SHA-256"},m,{name:"AES-GCM",length:256},false,["decrypt"])}).then(function(k){return crypto.subtle.decrypt({name:"AES-GCM",iv:d.slice(16,28)},k,d.slice(28))}).then(function(p){return new TextDecoder().decode(p)})}
+function openW(n,html,pw){var s=document.getElementById("sl"+n);s.innerHTML=html;s.hidden=false;document.getElementById("lb"+n).hidden=true;var h=document.querySelector("#w"+n+" .si");if(h)h.textContent="🔓";var a=document.querySelector('nav.top a[href="#w'+n+'"]');if(a)a.textContent="🔓 Week "+n;try{localStorage.setItem("aw_pw"+n,pw)}catch(e){}}
+function tryUnlock(n,pw,quiet){var ms=document.getElementById("ms"+n);if(!window.crypto||!crypto.subtle){if(!quiet)ms.textContent="افتحي الملف بـSafari أو Chrome عشان يفتح.";return}
+if(!pw)return;pw=pw.trim().toUpperCase();if(!quiet)ms.textContent="...";dec(n,pw).then(function(h){openW(n,h,pw)},function(){if(!quiet)ms.textContent="الرمز غلط، جرّبي مرة ثانية."})}
+[2,3,4].forEach(function(n){var i=document.getElementById("in"+n),b=document.getElementById("bt"+n);b.onclick=function(){tryUnlock(n,i.value)};i.onkeydown=function(e){if(e.key==="Enter")tryUnlock(n,i.value)};var sv=null;try{sv=localStorage.getItem("aw_pw"+n)}catch(e){}if(sv)tryUnlock(n,sv,true)});
+})();
+  </script>
+ </body>
+</html>
